@@ -1,0 +1,98 @@
+:root {
+    font-family: "Roboto";
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .mobile-header {
+        background-color: #6202ee;
+        height: 75px;
+        box-shadow: 0px 2px 4px gray;
+    }
+
+    .container {
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+
+    .mini-container {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .page-name {
+        color: white;
+        position: absolute;
+        font-weight: 500;
+        left: 100;
+    }
+
+    .icons, .icons-1, .icons-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .form {
+        padding: 50px 35px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form img {
+        padding-right: 25px;
+    }
+
+    .two { 
+        display: flex; 
+        align-items: center;
+    }
+        
+    .input-1, .input-2 {
+        padding: 0 20px;
+        height: 60px;
+    }
+
+    .input-1 {
+        background-color: #e8e8e8;
+        border: none;
+        border-bottom: 1px gray solid;
+        border-radius: 5px 5px 0px 0px;
+    }   
+
+    .input-2 {
+        background-color: white;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+
+    .phone {
+        display: flex;
+        align-items: center;
+    }
+
+    .wide {
+        width: 100%;
+    }
+
+    .odd {
+        width: 325px;
+    }
+
+    .short {
+        width: 100%;
+        margin-left: 34px;
+    }
+}
