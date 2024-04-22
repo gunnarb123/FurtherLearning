@@ -135,3 +135,25 @@
     transition: ease-in-out 0.3s;
     padding: 0.4375rem 1.5625rem;
 }
+
+.card {
+    padding: var(--size-30);
+    box-shadow: 0 0 10px rgba(48, 63, 100, 0.15);
+    background: white;
+    border-radius: 8px;
+}
+
+.card span {
+    width: 4.375rem;
+    height: 4.375rem;
+    background: green;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    border-radius: 50%;
+
+}
+
+.bg-contrast {
+    background-color: var(--contrast);
+}
