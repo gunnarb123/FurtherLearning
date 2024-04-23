@@ -221,6 +221,7 @@ span.color-6 { background-image: linear-gradient(90deg, #a1ecff 0%, #7dbcff 100%
 .block-text.pricing-header { 
     text-align: center;
     padding-right: 0;
+    margin: var(--size-100) 0;
 }
 
 .pricing-table {
@@ -228,6 +229,7 @@ span.color-6 { background-image: linear-gradient(90deg, #a1ecff 0%, #7dbcff 100%
     grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
     gap: var(--size-18);
     margin: auto;
+    align-items: flex-start;
 }
 
 .base-card {
@@ -236,8 +238,17 @@ span.color-6 { background-image: linear-gradient(90deg, #a1ecff 0%, #7dbcff 100%
     padding: var(--size-16);
 }
 
+.base-card .checked {
+    color: var(--success);
+}
+
+.base-card .times {
+    color: var(--danger);
+}
+
 .base-card.featured {
     box-shadow: 0 10px 20px rgba(82, 179, 255, 0.2);
+    margin-top: -1rem;
 }
 
 .base-card h3 {
@@ -261,12 +272,96 @@ span.color-6 { background-image: linear-gradient(90deg, #a1ecff 0%, #7dbcff 100%
 
 .icon {
     float: right;
+    font-weight: 400;
 }
 
 .base-card li {
-    margin-bottom: var(--size-10);
+    margin-bottom: var(--size-20);
+    font-size: var(--size-14);
 }
 
 .base-card hr {
     margin: 2rem 0 1rem;
+}
+
+.plan-btn-wrapper {
+    text-align: center;
+}
+
+.testimonials {
+    margin: var(--size-100);
+}
+
+.testimonials .block-text {
+    margin: var(--size-100) 0;
+    text-align: center;
+}
+
+.test-container {
+    margin: auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "tall top"
+    "tall bot";
+    gap: 20px;
+}
+
+.testimonial {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: var(--size-30);
+}
+
+.testimonial > p {
+    margin-top: var(--size-10);
+    line-height: 1.7;
+    color: var(--font-color-dark);
+}
+
+.testimonial > img {
+    width: 80px;
+    height: 80px;
+    float: right;
+    margin-top: var(--size-40);
+}
+
+.person-info {
+    display: flex;
+    align-items: center; 
+}
+
+.person-info img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.person-info div { padding-left: var(--size-20); }
+
+.person-info h3 {
+    margin: 0;
+    font-size: var(--size-20);
+    font-weight: 600;
+    color: black;
+}
+
+.person-info p {
+    margin: 8px 0;
+}
+
+.tall {
+    grid-area: tall;
+}
+
+.top > p, .bot > p { font-size: var(--size-14);}
+
+.top {
+    grid-area: top;
+}
+
+.bot {
+    grid-area: bot;
 }
