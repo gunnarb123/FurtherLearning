@@ -53,7 +53,8 @@
 }
 
 .bg-header {
-  background-image: url("../CodeRad-assets/bg-header-1.jpg");
+    background-image: url("../CodeRad-assets/bg-header-1.jpg");
+    padding: var(--size-150) 0;
 }
 
 .video-demo {
@@ -96,7 +97,7 @@
 }
 
 .block-text {
-  padding-right: var(--size-50);
+    padding-right: var(--size-50);
 }
 
 .block-text span {
@@ -206,7 +207,7 @@ span.color-6 {
 
 .video-demo .block-text h2,
 .video-demo .block-text p {
-  color: white;
+    color: white;
 }
 
 .video-box {
@@ -248,9 +249,9 @@ span.color-6 {
 }
 
 .base-card {
-  background-color: white;
-  border-radius: 5px;
-  padding: var(--size-16);
+    background-color: white;
+    border-radius: 5px;
+    padding: var(--size-16);
 }
 
 .base-card .checked {
@@ -301,6 +302,10 @@ span.color-6 {
 
 .plan-btn-wrapper {
   text-align: center;
+}
+
+.plan-btn-wrapper a {
+    width: 75%;
 }
 
 .testimonials {

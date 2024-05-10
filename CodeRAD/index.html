@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar nav">
         <div class="container">
-            <button class="navbar-toggler" aria-expanded="false" aria-controls="navbar-dropdown">
+            <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
                 <span>&#9776;</span>
             </button>
             <a href="index.html" class="navbar-brain">CodeRAD</a>
@@ -188,10 +188,10 @@
                         <span class="title">Speedy Tool Building</span>
                         <span class="icon times">&#10761;</span>
                     </li>
-                    <div class="plan-btn-wrapper">
-                        <a href="" class="btn btn-blue">Learn More</a>
-                    </div>
                 </ul>
+                <div class="plan-btn-wrapper">
+                    <a href="" class="btn btn-blue">Get Started</a>
+                </div>
             </div>
 
             <div class="base-card">
@@ -345,5 +345,16 @@
     </footer>
 
     <a id="scrollUp" href="#pagetop"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+
+        function toggleNav({ target }) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute['aria-expanded', !expanded];
+        }
+
+        navButton.addEventListener('click', toggleNav)
+    </script>
 </body>
 </html>
