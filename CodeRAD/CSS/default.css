@@ -4,7 +4,7 @@
     --font-color-light: #b0aebe;
     --font-color-link: #57a6ff;
     --footer: #34314b;
-    --foooter-base: #2e2b45;
+    --footer-base: #2e2b45;
     --contrast: rgba(246, 246, 249, 0.8);
     --success: #64ecf5;
     --danger: #ff8b8d;
@@ -21,6 +21,10 @@
     --size-50: 3.125rem;
     --size-100: 6.25rem;
     --size-150: 9.375rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -67,10 +71,16 @@ img {
     margin-right: auto;
 }
 
-@media (min-width: 1200px) {
-    .container { max-width: 1140px; }
-}
-
 @media (min-width: 768px) {
     .pricing-table { max-width: 720px; }
+}
+
+@media (min-width: 992px) {
+    footer .container {
+        max-width: 950px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container { max-width: 1140px; }
 }
